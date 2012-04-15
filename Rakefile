@@ -1,10 +1,11 @@
 require "bundler"
 Bundler.setup
+Bundler::GemHelper.install_tasks
 
 require "rspec/core/rake_task"
-Rspec::Core::RakeTask.new(:spec)
+RSpec::Core::RakeTask.new(:spec)
 
-gemspec = eval(File.read("newgem.gemspec"))
+gemspec = eval(File.read("synchrony_sunspot.gemspec"))
 
 task :build => "#{gemspec.full_name}.gem"
 
