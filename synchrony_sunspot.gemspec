@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary     = "Tweaks RSolr to use em-synchrony's em-http-request."
   s.description = "Provides an em-synchrony compatible rsolr connection driver & overrides Sunspot's connection method."
 
-  s.required_rubygems_version = ">= 1.8.10"
+  s.required_rubygems_version = ">= 1.8.0"
 
   # lol - required for validation
   s.rubyforge_project         = "synchrony-sunspot"
